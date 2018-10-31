@@ -41,7 +41,7 @@ module.exports = {
         // Paths
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
-        assetsPublicPath: webpacConfig.build.assetsPublicPath || '/',
+        assetsPublicPath: config.build.assetsPublicPath || '/',
 
         /**
          * Source Maps
