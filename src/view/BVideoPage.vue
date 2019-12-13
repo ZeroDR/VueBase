@@ -1,6 +1,7 @@
 <template>
     <div class="video-panel">
         <video-player ref="videoPlayer" :options="videoOptions" class="vjs-custom-skin videoPlayer"></video-player>
+        <!--<div ref="live"></div>-->
     </div>
 </template>
 
@@ -44,6 +45,23 @@ export default {
 
     mounted() {
         this.$message('欢迎使用基础模板!');
+        // setTimeout(()=>{
+        //     this.$message('重新加载');
+        //     this.videoOptions.sources[0].src = 'rtmp://58.200.131.2:1935/livetv/hunantv';
+        // },1000*60)
+        // setTimeout(() => {
+        //     this.player = cyberplayer(this.$refs.live).setup({
+        //         width: 580,
+        //         height: 530,
+        //         file: 'rtmp://58.200.131.2:1935/livetv/hunantv',
+        //         backcolor: '#FFFFFF',
+        //         autostart: true,
+        //         stretching: 'uniform',
+        //         volume: 100,
+        //         controls: 'over',
+        //         ak: '45daa5ae4bc04dc3ba4a6549fa2d9ec7'
+        //     })
+        // }, 1000)
     },
     components:{videoPlayer},
     methods: {
