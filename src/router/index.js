@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '@/view/HomePage.vue'
+import HomePage from '@/view/VideoPage.vue'
 
 Vue.use(Router)
 
